@@ -10,6 +10,8 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     networks:
       - lab-net
+     group_add:
+     	- "115"
 
 volumes:
   jenkins_home:
