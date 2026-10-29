@@ -56,7 +56,7 @@ pipeline {
 
     post {
         always {
-            junit 'report/*.xml'
+            junit 'reports/*.xml'
         }
         success {
             echo 'Deployed! Open http://<VM-IP>:8081'
